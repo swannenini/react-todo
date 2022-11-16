@@ -1,0 +1,70 @@
+:root {
+	--color-white: #ffffff;
+	--color-bg: rgb(199, 255, 199);
+	--color-bg-dark: #e7e7e7;
+	--color-grey: #d8d4d4;
+	--color-text: #22243b;
+	--color-accent: #ff934a;
+	--color-scrollbar: #c9c9c9;
+}
+html.dark{
+	--color-bg: #fcb3ff;
+	--color-accent: #35ffa1;
+	--color-bg-dark: #9dd3ff;
+	--color-text: #fdfffd;
+	--color-grey:#919191;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+ul,
+li {
+	list-style: none;
+}
+
+body {
+	width: 100vw;
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 1.2rem;
+	background: rgb(144, 166, 255);
+	background: linear-gradient(
+		106deg,
+		rgb(255, 160, 250) 0%,
+		hwb(184 53% 0% / 0.548) 100%
+	);
+}
+#root {
+	width: 100%;
+	max-width: 500px;
+	height: 60%;
+	background-color: var(--color-bg-dark);
+	border-radius: 1rem;
+	display: flex;
+	flex-direction: column;
+	box-shadow: 5px 5px 25px rgba(0, 0, 0, 0.5);
+	overflow: hidden;
+}
+
+button {
+	border: none;
+	outline: none;
+}
+
+::-webkit-scrollbar {
+	width: 0.5rem;
+}
+::-webkit-scrollbar-track {
+	background-color: var(--color-bg-dark);
+}
+::-webkit-scrollbar-thumb {
+	background-color: var(--color-scrollbar);
+}
+::-webkit-scrollbar-thumb:hover {
+	background-color: var(--color-accent);
+}
